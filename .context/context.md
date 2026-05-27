@@ -72,3 +72,26 @@ To maintain high portability across Linux distributions:
   - Folder names: `kebab-case` (e.g., `regex-task-manager`).
   - Script names: `snake_case.sh` (e.g., `task_01_ipv4.sh`).
   - Variables and functions inside scripts: `snake_case` (e.g., `first_name`, `normalize_username`).
+
+---
+
+## 5. Documentation Standards
+
+Every project `README.md` must follow this structure:
+
+1. **Title & Description** – Brief explanation of the project's purpose.
+2. **Features** – Bullet-point list of capabilities.
+3. **Flowchart** – Mermaid diagram illustrating the main execution flow.
+4. **Usage / Example Run** – Step-by-step instructions (`chmod +x`, `sudo ./script.sh`) with sample terminal output.
+5. **Technical Details** *(optional)* – Implementation notes for non-obvious logic.
+
+### Mermaid Diagram Rules
+
+* Always use `graph TD` (top-down) for flowcharts.
+* **Avoid Mermaid reserved keywords as node IDs.** The following identifiers are reserved and will cause parse errors on GitHub:
+  - `end`, `start`, `subgraph`
+  - Use alternatives like `Done`, `Begin`, `Group` instead.
+* Use plain identifiers without quotes where possible (e.g., `Start --> Menu`).
+* Quoted labels with spaces are fine on the **right-hand side** of `-->` if wrapped in `["..."]`, but avoid them as standalone node IDs on the left.
+* Always validate diagrams render correctly on GitHub before committing.
+

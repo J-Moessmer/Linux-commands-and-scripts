@@ -45,18 +45,12 @@ Each assignment is mapped to a dedicated script:
 
 ```mermaid
 graph TD
-    start("Start")
-    menu("Display Dashboard Menu")
-    select("User selects task")
-    exec("Execute selected task script")
-    back("Return to menu")
-    exit("User exits")
-    start --> menu
-    menu --> select
-    select --> exec
-    exec --> back
-    back --> menu
-    menu --> exit
+    Start --> Menu
+    Menu --> Select
+    Select --> Exec
+    Exec --> Back
+    Back --> Menu
+    Menu --> Exit
 ```
 
 

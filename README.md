@@ -3,6 +3,19 @@
 This repository serves as a centralized collection for all of my small Linux projects, utility scripts, and commands. Each project is organized in its own subdirectory and contains its own detailed documentation.
 
 ## Table of Contents (TOC)
+## Directory Layout
+
+```mermaid
+graph TD
+    root["Root"]
+    root --> assets["assets/"]
+    root --> bash_basics["bash-basics/"]
+    root --> ipv6_validation["ipv6-validation/"]
+    root --> regex_task_manager["regex-task-manager/"]
+    root --> user_login_data["user-login-data-script/"]
+    root --> context[".context/"]
+```
+
 
 - [User Login Data Script](./user-login-data-script/README.md) - Bash script for automated user creation from a CSV file, supporting various Linux distributions.
 - [Bash Basics](./bash-basics/README.md) - Introductory exercises showing basic greeting statements and parameter printing.

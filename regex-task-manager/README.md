@@ -41,3 +41,40 @@ Each assignment is mapped to a dedicated script:
    - Deduplicates and lists all unique transport protocols (e.g., `tcp`, `udp`, `sctp`) in the services dump.
 10. **Task 9: Count UDP Ports** (`task_10_count_udp.sh`)
     - Performs the counts from Tasks 6 & 7 specifically for the UDP protocol.
+## Flowchart
+
+```mermaid
+graph TD
+    start["Start"] --> menu["Display Dashboard Menu"]
+    menu --> select["User selects task"]
+    select --> exec["Execute selected task script"]
+    exec --> back["Return to menu"]
+    back --> menu
+    menu --> exit["User exits"]
+```
+
+## Example Run
+
+```bash
+chmod +x start_task_manager.sh
+./start_task_manager.sh
+```
+
+Sample output:
+```
+Welcome to Regex Task Manager!
+1) Extract IPv4 Addresses
+2) Extract IPv6 Addresses
+3) Extract Network Interfaces
+4) List Regular Users
+5) List Regular Groups
+6) Extract Services Column
+7) Count 3‑digit TCP Ports
+8) Count 2‑ and 5‑digit TCP Ports
+9) List Unique Protocols
+10) Count UDP Ports
+Select a task (1‑10, q to quit): 1
+Executing task_01_ipv4.sh...
+[IPv4 extraction results]
+Press any key to return to menu...
+```

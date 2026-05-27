@@ -8,6 +8,32 @@ This script automates the creation of Linux user accounts from a CSV file. It re
 - **Windows CSV Support**: Automatically filters out carriage returns (`\r`), ensuring CSV files edited on Windows systems can be parsed without issues.
 - **Delimiter Tolerance**: Supports both comma (`,`) and semicolon (`;`) as CSV separators.
 
+## Flowchart
+
+```mermaid
+graph TD
+    start["Start"] --> read_csv["Read CSV"]
+    read_csv --> detect_distro["Detect Distro"]
+    detect_distro --> create_user["Create User Accounts"]
+    create_user --> set_password["Set Passwords"]
+    set_password --> end["End"]
+```
+
+## Example Run
+
+```bash
+./create_users.sh users_sample.csv
+```
+
+Sample output:
+```
+Creating user: max.mustermann ...
+User max.mustermann created.
+Creating user: erika.musterfrau ...
+User erika.musterfrau created.
+```
+
+
 ## CSV Format
 The CSV file should contain a header row. Example (`users_sample.csv`):
 ```csv

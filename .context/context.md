@@ -17,11 +17,25 @@ Every project is self-contained in its own subdirectory with a dedicated `README
 ├── README.md                  # Main repository overview, project index
 ├── .context/
 │   └── context.md             # This file (AI Guidelines & rules)
-├── assets/                    # Shared assets directory for projects (e.g., images, diagrams)
-└── [project-name]/            # Kebab-case directory for each project
-    ├── README.md              # Project-specific usage and instructions
-    ├── [script].sh            # Shell scripts (where applicable)
-    └── [data].csv             # Accompanying sample data
+├── assets/                    # Shared assets directory for projects (e.g., datasets, images)
+├── user-login-data-script/    # CSV user account creator script
+│   ├── create_users.sh
+│   ├── users_sample.csv
+│   └── README.md
+├── bash-basics/               # Basic shell programming scripts
+│   ├── my_first_script.sh
+│   ├── print_parameters.sh
+│   └── README.md
+├── ipv6-validation/           # IPv6 address verification tool
+│   ├── validate_ipv6.sh
+│   └── README.md
+└── regex-task-manager/        # Interactive Regex extraction TUI & scripts
+    ├── start_task_manager.sh
+    ├── README.md
+    └── scripts/
+        ├── task_01_ipv4.sh
+        ├── task_02_ipv6.sh
+        └── ... (tasks 3 to 10)
 ```
 
 ---
@@ -31,6 +45,9 @@ Every project is self-contained in its own subdirectory with a dedicated `README
 | Project Name | Path | Description |
 | :--- | :--- | :--- |
 | **User Login Data Script** | `user-login-data-script/` | Reads user info from a CSV and creates Linux system accounts. Supports distro-aware command execution. |
+| **Bash Basics** | `bash-basics/` | Basic introductory shell programming script exercises. |
+| **IPv6 Validation** | `ipv6-validation/` | Regex-based address validation supporting CLI arguments and interactive prompts. |
+| **Regex Task Manager** | `regex-task-manager/` | TUI dashboard to launch 10 different network, system, and protocol regex-extraction assignments. |
 
 ---
 
@@ -52,6 +69,6 @@ To maintain high portability across Linux distributions:
   - Set `set -o pipefail` to ensure pipeline failures are detected.
   - Handle errors gracefully, and log warnings/errors with colored output (disabled if not writing to a TTY).
 * **Naming Conventions**:
-  - Folder names: `kebab-case` (e.g., `user-login-data-script`).
-  - Script names: `snake_case.sh` (e.g., `create_users.sh`).
+  - Folder names: `kebab-case` (e.g., `regex-task-manager`).
+  - Script names: `snake_case.sh` (e.g., `task_01_ipv4.sh`).
   - Variables and functions inside scripts: `snake_case` (e.g., `first_name`, `normalize_username`).

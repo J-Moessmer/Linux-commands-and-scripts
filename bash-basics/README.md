@@ -28,7 +28,7 @@ chmod +x print_parameters.sh
 graph TD
     start["Start"] --> my_first["my_first_script.sh"]
     my_first --> print_params["print_parameters.sh"]
-    print_params --> end["End"]
+    print_params --> Done
 ```
 
 ## Example Usage

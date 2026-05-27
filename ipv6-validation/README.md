@@ -26,7 +26,7 @@ graph TD
     start["Start"] --> read_input["Read Input"]
     read_input --> validate["Validate IPv6"]
     validate --> result["Print Result"]
-    result --> end["End"]
+    result --> Done
 ```
 
 ## Example Run

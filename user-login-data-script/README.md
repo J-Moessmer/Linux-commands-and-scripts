@@ -16,7 +16,7 @@ graph TD
     read_csv --> detect_distro["Detect Distro"]
     detect_distro --> create_user["Create User Accounts"]
     create_user --> set_password["Set Passwords"]
-    set_password --> end["End"]
+    set_password --> Done
 ```
 
 ## Example Run

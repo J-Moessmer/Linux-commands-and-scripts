@@ -1,0 +1,15 @@
+# --- Router Configuration ---
+# WAN Interface to the Internet
+WAN_IF=ens160
+
+# LAN Interfaces (separated by spaces)
+LAN_IFACES=(ens224 ens256)
+
+# Router Gateway IP address
+ROUTER_GATEWAY=172.16.7.33
+
+# IP Addresses (CIDR Notation, same order as LAN_IFACES)
+LAN_IPS=(172.16.7.33/27 192.168.50.1/24)
+
+# DHCP Ranges (Start, End, Lease-Time)
+DHCP_RANGES=(172.16.7.34,172.16.7.60,12h 192.168.50.10,192.168.50.50,12h)

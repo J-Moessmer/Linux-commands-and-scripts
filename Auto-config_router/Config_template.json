@@ -2,9 +2,15 @@
     "router": {
         "role": "router",
         "interfaces": [
-            "ens160",
-            "ens224",
-            "ens256"
+            {
+                "name": "ens160"
+            },
+            {
+                "name": "ens224"
+            },
+            {
+                "name": "ens256"
+            }
         ],
         "ips": [
             "172.16.7.33/27",
@@ -18,7 +24,9 @@
     },
     "client1": {
         "role": "client",
-        "interface": "ens224",
+        "interface": {
+            "name": "ens224"
+        },
         "ip": "172.16.7.34/27",
         "gateway": "172.16.7.33"
     }

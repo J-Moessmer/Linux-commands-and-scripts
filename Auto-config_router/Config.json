@@ -1,0 +1,53 @@
+{
+    "router": {
+        "role": "router",
+        "interfaces": [
+            "ens224",
+            "ens256"
+        ],
+        "ips": [
+            "172.16.7.33/27",
+            "172.16.7.97/27"
+        ],
+        "dhcp": [
+            "172.16.7.34,172.16.7.63,12h",
+            "172.16.7.98,172.16.7.127,12h"
+        ]
+    },
+    "client1": {
+        "role": "client",
+        "interface": "ens224",
+        "ip": "172.16.7.42/27",
+        "gateway": "172.16.7.33"
+    },
+    "client2": {
+        "role": "client",
+        "interface": "ens224",
+        "ip": "172.16.7.52/27",
+        "gateway": "172.16.7.33"
+    },
+    "client3": {
+        "role": "client",
+        "interface": "ens224",
+        "ip": "172.16.7.62/27",
+        "gateway": "172.16.7.33"
+    },
+    "client4": {
+        "role": "client",
+        "interface": "ens224",
+        "ip": "172.16.7.106/27",
+        "gateway": "172.16.7.97"
+    },
+    "client5": {
+        "role": "client",
+        "interface": "ens224",
+        "ip": "172.16.7.116/27",
+        "gateway": "172.16.7.97"
+    },
+    "client6": {
+        "role": "client",
+        "interface": "ens224",
+        "ip": "172.16.7.126/27",
+        "gateway": "172.16.7.97"
+    }
+}

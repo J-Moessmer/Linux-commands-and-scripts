@@ -29,13 +29,20 @@ Every project is self-contained in its own subdirectory with a dedicated `README
 ├── ipv6-validation/           # IPv6 address verification tool
 │   ├── validate_ipv6.sh
 │   └── README.md
-└── regex-task-manager/        # Interactive Regex extraction TUI & scripts
-    ├── start_task_manager.sh
-    ├── README.md
-    └── scripts/
-        ├── task_01_ipv4.sh
-        ├── task_02_ipv6.sh
-        └── ... (tasks 3 to 10)
+├── regex-task-manager/        # Interactive Regex extraction TUI & scripts
+│   ├── start_task_manager.sh
+│   ├── README.md
+│   └── scripts/
+│       ├── task_01_ipv4.sh
+│       ├── task_02_ipv6.sh
+│       └── ... (tasks 3 to 10)
+└── Auto-config_router/        # Automated Router/Client deployment system
+    ├── autoconfig.sh
+    ├── autoconfigv2.sh
+    ├── Config.json
+    ├── Config_template.json
+    ├── Config_template.txt
+    └── README.md
 ```
 
 ---
@@ -48,6 +55,7 @@ Every project is self-contained in its own subdirectory with a dedicated `README
 | **Bash Basics** | `bash-basics/` | Basic introductory shell programming script exercises. |
 | **IPv6 Validation** | `ipv6-validation/` | Regex-based address validation supporting CLI arguments and interactive prompts. |
 | **Regex Task Manager** | `regex-task-manager/` | TUI dashboard to launch 10 different network, system, and protocol regex-extraction assignments. |
+| **Auto-config Router** | `Auto-config_router/` | Distro-aware automation script for configuring systems as a Router or Client using a central JSON file. |
 
 ---
 

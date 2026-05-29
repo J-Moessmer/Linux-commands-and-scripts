@@ -1,0 +1,17 @@
+{
+  "ROLE": "router",
+  "WAN_IF": "ens160",
+  "ROUTER_GATEWAY": "172.16.7.33",
+  "LAN_INTERFACES": [
+    {
+      "interface": "ens224",
+      "ip_address": "172.16.7.33/27",
+      "dhcp_range": "172.16.7.34,172.16.7.60,12h"
+    },
+    {
+      "interface": "ens256",
+      "ip_address": "192.168.50.1/24",
+      "dhcp_range": "192.168.50.10,192.168.50.50,12h"
+    }
+  ]
+}
